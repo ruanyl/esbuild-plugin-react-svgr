@@ -9,15 +9,16 @@
     "prepublish": "npm run build",
     "test": "npm run test-only",
     "test-only": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "lint": "eslint ./src --ext .ts"
   },
   "devDependencies": {
     "@tsconfig/node14": "^1.0.0",
     "@types/jest": "^26.0.23",
-    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.23.0",
-    "eslint": "^7.26.0",
-    "eslint-config-react-typescript": "^1.0.5",
+    "eslint": "^7.27.0",
+    "eslint-config-react-typescript": "^1.0.7",
     "import-sort-cli": "^6.0.0",
     "import-sort-parser-typescript": "^6.0.0",
     "import-sort-style-alias": "^1.2.0",
@@ -33,6 +34,12 @@
     "tabWidth": 2,
     "semi": false,
     "singleQuote": true
+  },
+  "importSort": {
+    ".ts, .tsx": {
+      "parser": "typescript",
+      "style": "alias"
+    }
   },
   "author": "Yulong Ruan <ruanyu1@gmail.com>",
   "license": "MIT",
