@@ -86,6 +86,9 @@ exports[`build svg import to url should bundle svg import to a React component w
     strokeWidth: 8
   }));
   var logo_default2 = logo_default;
+
+  // logo.url.ts
+  console.log(logo_default2, SvgLogo);
 })();
 "
 `;
