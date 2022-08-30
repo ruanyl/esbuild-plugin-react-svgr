@@ -1,11 +1,11 @@
 {
-  "name": "boilerplate-ts",
+  "name": "esbuild-plugin-svgr",
   "version": "1.0.0",
   "description": "typescript starter",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --project tsconfig.build.json --declaration",
     "prepublish": "npm run build",
     "test": "npm run test-only",
     "test-only": "jest --coverage",
@@ -15,6 +15,7 @@
   "devDependencies": {
     "@tsconfig/node14": "^1.0.3",
     "@types/jest": "^29.0.0",
+    "@types/node": "^18.7.14",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
     "eslint": "^8.23.0",
@@ -26,6 +27,10 @@
     "prettier": "^2.7.1",
     "ts-jest": "^28.0.8",
     "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "@svgr/core": "^6.3.1",
+    "esbuild": "^0.15.6"
   },
   "prettier": {
     "trailingComma": "es5",
@@ -46,8 +51,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ruanyl/boilerplate-ts.git"
+    "url": "https://github.com/ruanyl/esbuild-plugin-svgr.git"
   },
-  "homepage": "https://github.com/ruanyl/boilerplate-ts",
-  "bugs": "https://github.com/ruanyl/boilerplate-ts/issues"
+  "homepage": "https://github.com/ruanyl/esbuild-plugin-svgr",
+  "bugs": "https://github.com/ruanyl/esbuild-plugin-svgr/issues"
 }

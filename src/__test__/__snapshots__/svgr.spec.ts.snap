@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`build svg entry point with svgr should transform svg to React component with default export 1`] = `
+"import * as React from "react";
+const SvgLogo = (props) => /* @__PURE__ */ React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  width: 500,
+  height: 500,
+  ...props
+}, /* @__PURE__ */ React.createElement("circle", {
+  cx: 250,
+  cy: 250,
+  r: 210,
+  fill: "#fff",
+  stroke: "#000",
+  strokeWidth: 8
+}));
+export default SvgLogo;
+"
+`;
+
+exports[`build svg entry point with svgr should transform svg to React component with named export 1`] = `
+"import * as React from "react";
+const SvgLogo = (props) => /* @__PURE__ */ React.createElement("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  width: 500,
+  height: 500,
+  ...props
+}, /* @__PURE__ */ React.createElement("circle", {
+  cx: 250,
+  cy: 250,
+  r: 210,
+  fill: "#fff",
+  stroke: "#000",
+  strokeWidth: 8
+}));
+export { SvgLogo as ReactComponent };
+"
+`;
+
+exports[`build svg import to url should bundle svg import to a React component with url export 1`] = `
+""use strict";
+(() => {
+  var __create = Object.create;
+  var __defProp = Object.defineProperty;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __getProtoOf = Object.getPrototypeOf;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require : typeof Proxy !== "undefined" ? new Proxy(x, {
+    get: (a, b) => (typeof require !== "undefined" ? require : a)[b]
+  }) : x)(function(x) {
+    if (typeof require !== "undefined")
+      return require.apply(this, arguments);
+    throw new Error('Dynamic require of "' + x + '" is not supported');
+  });
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+    mod
+  ));
+
+  // logo.svg
+  var logo_default = "./logo-4YCDN2WN.svg";
+
+  // svgr:/Users/yulongruan/project/esbuild-plugin-svgr/src/__test__/fixtures/logo.svg
+  var React = __toESM(__require("react"));
+  var SvgLogo = (props) => /* @__PURE__ */ React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 500,
+    height: 500,
+    ...props
+  }, /* @__PURE__ */ React.createElement("circle", {
+    cx: 250,
+    cy: 250,
+    r: 210,
+    fill: "#fff",
+    stroke: "#000",
+    strokeWidth: 8
+  }));
+  var logo_default2 = logo_default;
+})();
+"
+`;
+
+exports[`build svg import to url should bundle svg import to file url 1`] = `
+""use strict";
+(() => {
+  var __create = Object.create;
+  var __defProp = Object.defineProperty;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __getProtoOf = Object.getPrototypeOf;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require : typeof Proxy !== "undefined" ? new Proxy(x, {
+    get: (a, b) => (typeof require !== "undefined" ? require : a)[b]
+  }) : x)(function(x) {
+    if (typeof require !== "undefined")
+      return require.apply(this, arguments);
+    throw new Error('Dynamic require of "' + x + '" is not supported');
+  });
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+    mod
+  ));
+
+  // logo.svg
+  var logo_default = "./logo-4YCDN2WN.svg";
+
+  // svgr:/Users/yulongruan/project/esbuild-plugin-svgr/src/__test__/fixtures/logo.svg
+  var React = __toESM(__require("react"));
+  var logo_default2 = logo_default;
+})();
+"
+`;
+
+exports[`build svg import with svgr should bundle svg import to a React component with default export 1`] = `
+""use strict";
+(() => {
+  var __create = Object.create;
+  var __defProp = Object.defineProperty;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __getProtoOf = Object.getPrototypeOf;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require : typeof Proxy !== "undefined" ? new Proxy(x, {
+    get: (a, b) => (typeof require !== "undefined" ? require : a)[b]
+  }) : x)(function(x) {
+    if (typeof require !== "undefined")
+      return require.apply(this, arguments);
+    throw new Error('Dynamic require of "' + x + '" is not supported');
+  });
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+    mod
+  ));
+
+  // svgr:/Users/yulongruan/project/esbuild-plugin-svgr/src/__test__/fixtures/logo.svg
+  var React = __toESM(__require("react"));
+  var SvgLogo = (props) => /* @__PURE__ */ React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 500,
+    height: 500,
+    ...props
+  }, /* @__PURE__ */ React.createElement("circle", {
+    cx: 250,
+    cy: 250,
+    r: 210,
+    fill: "#fff",
+    stroke: "#000",
+    strokeWidth: 8
+  }));
+  var logo_default = SvgLogo;
+})();
+"
+`;
+
+exports[`build svg import with svgr should bundle svg import to a React component with named export 1`] = `
+""use strict";
+(() => {
+  var __create = Object.create;
+  var __defProp = Object.defineProperty;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __getProtoOf = Object.getPrototypeOf;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require : typeof Proxy !== "undefined" ? new Proxy(x, {
+    get: (a, b) => (typeof require !== "undefined" ? require : a)[b]
+  }) : x)(function(x) {
+    if (typeof require !== "undefined")
+      return require.apply(this, arguments);
+    throw new Error('Dynamic require of "' + x + '" is not supported');
+  });
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+    mod
+  ));
+
+  // svgr:/Users/yulongruan/project/esbuild-plugin-svgr/src/__test__/fixtures/logo.svg
+  var React = __toESM(__require("react"));
+  var SvgLogo = (props) => /* @__PURE__ */ React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 500,
+    height: 500,
+    ...props
+  }, /* @__PURE__ */ React.createElement("circle", {
+    cx: 250,
+    cy: 250,
+    r: 210,
+    fill: "#fff",
+    stroke: "#000",
+    strokeWidth: 8
+  }));
+})();
+"
+`;
