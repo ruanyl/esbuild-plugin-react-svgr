@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { Config, transform } from '@svgr/core'
-import { Plugin } from 'esbuild'
+import type { Plugin } from 'esbuild'
 
 interface Options {
   exportUrl?: boolean
