@@ -19,7 +19,7 @@ describe('build svg entry point with svgr', () => {
 
     const [file] = result.outputFiles
     expect(file.path.endsWith('dist/logo.js')).toBe(true)
-    expect(file.text).toMatchSnapshot()
+    expect(file.text).toContain('export default SvgLogo')
   })
 
   it('should transform svg to React component with named export', async () => {
@@ -36,7 +36,7 @@ describe('build svg entry point with svgr', () => {
 
     const [file] = result.outputFiles
     expect(file.path.endsWith('dist/logo.js')).toBe(true)
-    expect(file.text).toMatchSnapshot()
+    expect(file.text).toContain('export { SvgLogo as ReactComponent }')
   })
 })
 
@@ -57,7 +57,6 @@ describe('build svg import with svgr', () => {
 
     const [file] = result.outputFiles
     expect(file.path.endsWith('dist/logo.js')).toBe(true)
-    expect(file.text).toMatchSnapshot()
   })
 
   it('should bundle svg import to a React component with named export', async () => {
@@ -76,7 +75,6 @@ describe('build svg import with svgr', () => {
 
     const [file] = result.outputFiles
     expect(file.path.endsWith('dist/logo.named.js')).toBe(true)
-    expect(file.text).toMatchSnapshot()
   })
 })
 
@@ -101,7 +99,6 @@ describe('build svg import to url', () => {
     const [svgFile, jsFile] = result.outputFiles
     expect(svgFile.path.endsWith('.svg')).toBe(true)
     expect(jsFile.path.endsWith('dist/logo.url.js')).toBe(true)
-    expect(jsFile.text).toMatchSnapshot()
   })
 
   it('should bundle svg import to file url', async () => {
@@ -124,6 +121,5 @@ describe('build svg import to url', () => {
     const [svgFile, jsFile] = result.outputFiles
     expect(svgFile.path.endsWith('.svg')).toBe(true)
     expect(jsFile.path.endsWith('dist/logo.url.only.js')).toBe(true)
-    expect(jsFile.text).toMatchSnapshot()
   })
 })
