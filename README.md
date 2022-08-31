@@ -1,5 +1,10 @@
 # esbuild-plugin-svgr
 
+### Install
+```
+pnpm add esbuild-plugin-react-svgr -D
+```
+
 ### Usage
 
 ```typescript
